@@ -1,165 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Organic Surf — Contact</title>
-  <link rel="stylesheet" href="../styles/main.css" />
-  <meta name="description" content="Request the Info Pack (PDF), schedule a site visit, or talk via WhatsApp. Retreat-ready investment in Pavones, Costa Rica." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inquire — Organic Surf | Pavones, Costa Rica</title>
+  <meta name="description" content="Request the Info Pack, schedule a private site visit, or message us on WhatsApp. Inquiries are reviewed personally — usually within 24 hours.">
+  <meta name="theme-color" content="#1a3a23">
+  <link rel="canonical" href="https://organic-surf.org/contact.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Inquire — Organic Surf">
+  <meta property="og:description" content="Request the Info Pack, schedule a site visit, or message us on WhatsApp.">
+  <meta property="og:url" content="https://organic-surf.org/contact.html">
+  <meta property="og:image" content="https://organic-surf.org/assets/gallery/jungle3.jpg">
+
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
+
 <header class="site-header">
-  <img src="../assets/images/design/logo-white.svg" alt="Organic Surf" class="logo" />
-  <nav>
+  <a href="index.html" class="brand" aria-label="Organic Surf — home">
+    <img src="assets/images/design/logo-white.svg" alt="">
+    <span class="brand-word">Organic Surf</span>
+  </a>
+  <nav class="primary" aria-label="Primary">
     <ul>
-      <!-- Rutas relativas para pruebas locales (file://) -->
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../first-project.html">Retreat Project</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="first-project.html">The Property</a></li>
+      <li><a href="contact.html" class="active">Inquire</a></li>
     </ul>
   </nav>
+  <a href="https://wa.me/50685094439" target="_blank" rel="noopener" class="nav-cta">WhatsApp</a>
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+  </button>
 </header>
 
-<main class="page">
+<!-- Page header on dark band so it sits beneath fixed transparent header -->
+<section class="section on-dark" style="padding-top: clamp(140px, 18vw, 200px);">
+  <div class="container-narrow">
+    <span class="eyebrow on-dark reveal">Get in touch</span>
+    <hr class="rule on-dark reveal">
+    <h1 class="reveal" style="font-size: clamp(2rem, 4.4vw, 3.4rem);">Inquiries are personal here.</h1>
+    <p class="lede reveal delay-1" style="margin-top: 1.2em;">
+      Tell us a little about who you are and what you're imagining. We respond personally —
+      usually within 24 hours — with the Info Pack, a call invitation, or a site visit window.
+    </p>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="section on-cream">
   <div class="container">
-    <h1>Contact Us</h1>
-    <p class="muted">Request the Info Pack (PDF), schedule a site visit, or ask anything about the retreat-ready property in Pavones.</p>
+    <div class="contact-grid">
+      <!-- Form -->
+      <div class="form-card reveal">
+        <form id="lead-form" action="https://formspree.io/f/mrbawjlk" method="POST" autocomplete="on">
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="_subject" value="Organic Surf — new inquiry">
 
-    <!-- Lead form card -->
-    <section class="card" style="padding:20px; margin-top:16px;">
-      <form id="lead-form" action="https://formspree.io/f/mrbawjlk" method="POST" autocomplete="on">
-        <!-- Anti-spam honeypot -->
-        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
-        <!-- Fallback redirect si JS no corre -->
-        <input type="hidden" name="_redirect" value="https://organic-surf.org/pages/thank-you.html" />
-
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
-          <div>
-            <label for="name">Full Name</label>
-            <input id="name" name="name" type="text" placeholder="Your name" required autocomplete="name" />
+          <div class="form-grid cols-2">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" required autocomplete="name" placeholder="Your name">
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@domain.com">
+            </div>
+            <div class="field">
+              <label for="whatsapp">WhatsApp <span style="opacity:.6; letter-spacing:.06em;">(optional)</span></label>
+              <input id="whatsapp" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="+1 …">
+            </div>
+            <div class="field">
+              <label for="country">Where are you based?</label>
+              <input id="country" name="country" type="text" placeholder="City, country">
+            </div>
+            <div class="field">
+              <label for="intent">What brings you here?</label>
+              <select id="intent" name="intent">
+                <option value="">Select…</option>
+                <option>Operator — I run / want to run a retreat brand</option>
+                <option>Investor — looking for hospitality / land exposure</option>
+                <option>Personal — building my own home / sanctuary</option>
+                <option>Partner — architect, designer, hospitality group</option>
+                <option>Exploring — curious for now</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="timeline">Timeline</label>
+              <select id="timeline" name="timeline">
+                <option value="">Select…</option>
+                <option>Within 3 months</option>
+                <option>3 – 6 months</option>
+                <option>6 – 12 months</option>
+                <option>12+ months / no rush</option>
+              </select>
+            </div>
           </div>
-          <div>
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="you@domain.com" required autocomplete="email" />
+
+          <div class="field" style="margin-top: 18px;">
+            <label for="message">Tell us a little</label>
+            <textarea id="message" name="message" rows="6" required placeholder="What you're imagining, what you'd like to learn, or any questions about the land."></textarea>
           </div>
-          <div>
-            <label for="whatsapp">WhatsApp (optional)</label>
-            <input id="whatsapp" name="whatsapp" type="tel" inputmode="tel" placeholder="+506 8509 4439" autocomplete="tel" />
+
+          <div class="checkrow">
+            <label><input type="checkbox" name="request_info_pack" value="yes" checked> Send me the Info Pack (PDF)</label>
+            <label><input type="checkbox" name="schedule_visit" value="yes"> I'd like to schedule a site visit</label>
+            <label><input type="checkbox" name="contact_whatsapp" value="yes"> Prefer WhatsApp reply</label>
           </div>
-          <div>
-            <label for="subject">Subject</label>
-            <input id="subject" name="subject" type="text" placeholder="Info Pack / Site Visit / Investment" />
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-dark">Send inquiry <span class="arr">→</span></button>
+            <a class="btn btn-outline-dark" href="https://wa.me/50685094439" target="_blank" rel="noopener">Message on WhatsApp</a>
           </div>
-        </div>
-
-        <div style="margin-top:12px;">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="6" placeholder="Tell us what you need..." required></textarea>
-        </div>
-
-        <div style="margin-top:10px; display:flex; gap:14px; align-items:center; flex-wrap:wrap;">
-          <label style="display:flex; align-items:center; gap:8px;">
-            <input type="checkbox" name="contact_whatsapp" value="yes" />
-            Prefer WhatsApp reply
-          </label>
-          <label style="display:flex; align-items:center; gap:8px;">
-            <input type="checkbox" name="request_info_pack" value="yes" />
-            Please send me the Info Pack (PDF)
-          </label>
-        </div>
-
-        <div style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap;">
-          <button type="submit" class="btn-primary">Send</button>
-          <a class="btn-secondary" href="https://wa.me/50685094439" target="_blank" rel="noopener">Message on WhatsApp</a>
-          <a class="btn-secondary" href="../first-project.html">View Retreat Project</a>
-        </div>
-
-        <p id="form-status" class="muted" style="margin-top:10px; font-size:.95rem;"></p>
-      </form>
-    </section>
-
-    <!-- Quick contacts -->
-    <section style="margin-top:22px;">
-      <ul class="facts">
-        <li><strong>Location:</strong> Pavones, Costa Rica</li>
-        <li><strong>Email:</strong> <a href="mailto:info@organic-surf.org">info@organic-surf.org</a></li>
-        <li><strong>WhatsApp:</strong> <a href="https://wa.me/50685094439" target="_blank" rel="noopener">+506 8509 4439</a></li>
-        <li><strong>Instagram:</strong> <a href="https://www.instagram.com/organic.surf_" target="_blank" rel="noopener">@organic.surf_</a></li>
-      </ul>
-    </section>
-  </div>
-</main>
-
-<footer class="site-footer">
-  <div class="footer-content">
-    <div class="footer-top">
-      <img src="../assets/images/design/logo-white.svg" alt="Organic Surf Logo" class="footer-logo" />
-    </div>
-    <div class="footer-bottom">
-      <div class="social-links">
-        <a href="https://www.instagram.com/organic.surf_" target="_blank" aria-label="Instagram">
-          <img src="../assets/icons/instagram.svg" alt="Instagram" />
-        </a>
-        <a href="https://wa.me/50685094439" target="_blank" aria-label="WhatsApp">
-          <img src="../assets/icons/whatsapp.webp" alt="WhatsApp" />
-        </a>
+          <p id="form-status" role="status"></p>
+        </form>
       </div>
-      <p class="footer-email"><a href="mailto:info@organic-surf.org">info@organic-surf.org</a></p>
-      <p class="footer-copy">© 2025 Organic Surf</p>
+
+      <!-- Meta column -->
+      <aside class="contact-meta reveal delay-1">
+        <div class="item">
+          <span class="k">Direct</span>
+          <span class="v"><a href="mailto:pedrope3652@gmail.com">pedrope3652@gmail.com</a></span>
+        </div>
+        <div class="item">
+          <span class="k">WhatsApp</span>
+          <span class="v"><a href="https://wa.me/50685094439" target="_blank" rel="noopener">+506 8509 4439</a></span>
+        </div>
+        <div class="item">
+          <span class="k">Instagram</span>
+          <span class="v"><a href="https://www.instagram.com/organic.surf_" target="_blank" rel="noopener">@organic.surf_</a></span>
+        </div>
+        <div class="item">
+          <span class="k">Where</span>
+          <span class="v">Pavones, Puntarenas — Costa Rica</span>
+        </div>
+        <div class="item" style="border-bottom:0;">
+          <span class="k">Response</span>
+          <span class="v">Personally reviewed. Usually within 24 hours.</span>
+        </div>
+      </aside>
     </div>
   </div>
-</footer>
+</section>
 
-<!-- Thank-You Popup -->
+<!-- Thank-you popup -->
 <div id="thankyou-popup" class="popup" aria-hidden="true">
   <div class="popup-content" role="dialog" aria-modal="true" aria-labelledby="ty-title">
-    <h2 id="ty-title">Thank You!</h2>
-    <p>Your message has been sent successfully.</p>
+    <h2 id="ty-title">Thank you.</h2>
+    <p>Your inquiry is in. We'll be in touch personally — usually within 24 hours.</p>
     <div class="popup-actions">
       <button id="close-popup" class="popup-close">Close</button>
-      <a href="../first-project.html" class="btn-secondary">View Retreat Project</a>
+      <a href="first-project.html" class="btn btn-outline-dark">Explore the property</a>
     </div>
   </div>
 </div>
 
-<script>
-  const form = document.getElementById('lead-form');
-  const statusEl = document.getElementById('form-status');
-  const popup = document.getElementById('thankyou-popup');
-  const closeBtn = document.getElementById('close-popup');
+<!-- FOOTER -->
+<footer class="site-footer footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/design/logo-white.svg" alt="Organic Surf">
+        <p>Stewarding rare coastal land in Costa Rica — and shaping it for the next generation of soulful retreats.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="first-project.html">The Property</a></li>
+          <li><a href="contact.html">Inquire</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:pedrope3652@gmail.com">pedrope3652@gmail.com</a></li>
+          <li><a href="https://wa.me/50685094439" target="_blank" rel="noopener">WhatsApp +506 8509 4439</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/organic.surf_" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+        <div class="footer-social" style="margin-top: 14px;">
+          <a href="https://www.instagram.com/organic.surf_" target="_blank" rel="noopener" aria-label="Instagram">
+            <img src="assets/icons/instagram.svg" alt="">
+          </a>
+          <a href="https://wa.me/50685094439" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <img src="assets/icons/whatsapp.webp" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Organic Surf · Pavones, Costa Rica</span>
+      <span>Inquiries handled personally — usually within 24 h.</span>
+    </div>
+  </div>
+</footer>
 
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    statusEl.textContent = 'Sending…';
-
-    try {
-      const res = await fetch(form.action, {
-        method: form.method,
-        body: new FormData(form),
-        headers: { 'Accept': 'application/json' }
-      });
-
-      if (res.ok) {
-        // Mostrar popup (sin redirección)
-        document.body.classList.add('no-scroll');
-        popup.classList.add('show');
-        popup.setAttribute('aria-hidden','false');
-        statusEl.textContent = '';
-        form.reset();
-      } else {
-        statusEl.textContent = 'Error sending the form.';
-      }
-    } catch (err) {
-      statusEl.textContent = 'Network error, try again.';
-    }
-  });
-
-  closeBtn.addEventListener('click', () => {
-    popup.classList.remove('show');
-    popup.setAttribute('aria-hidden','true');
-    document.body.classList.remove('no-scroll');
-  });
-</script>
-
+<script src="scripts/site.js" defer></script>
 </body>
 </html>

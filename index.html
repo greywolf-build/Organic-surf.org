@@ -1,140 +1,533 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Organic Surf — Build Your Own Retreat</title>
-<link rel="stylesheet" href="../styles/main.css">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
-<meta name="description" content="Exclusive retreat-ready land in Pavones, Costa Rica. Ocean views, jungle privacy, and walk-to-surf access. Perfect for building a premium yoga & wellness retreat. Request the Info Pack (PDF).">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Organic Surf — Retreat-Ready Land in Pavones, Costa Rica</title>
+  <meta name="description" content="Nearly 2 hectares of titled jungle, ocean views, spring-fed water and 300 m to the beach in Pavones, Costa Rica. The last of its kind. USD 495,000.">
+  <meta name="theme-color" content="#1a3a23">
+  <link rel="canonical" href="https://organic-surf.org/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Organic Surf — Retreat-Ready Land in Pavones, Costa Rica">
+  <meta property="og:description" content="Nearly 2 hectares of titled jungle, ocean views, spring-fed water and 300 m to the beach. The last of its kind.">
+  <meta property="og:url" content="https://organic-surf.org/">
+  <meta property="og:image" content="https://organic-surf.org/assets/gallery/drone_highshot.jpg">
+  <meta property="og:locale" content="en_US">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Organic Surf — Retreat-Ready Land in Pavones, Costa Rica">
+  <meta name="twitter:description" content="Nearly 2 hectares of titled jungle, ocean views, spring-fed water and 300 m to the beach. The last of its kind.">
+  <meta name="twitter:image" content="https://organic-surf.org/assets/gallery/drone_highshot.jpg">
+
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="preload" as="image" href="assets/gallery/drone_highshot.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Place",
+    "name": "Organic Surf — Pavones Retreat-Ready Property",
+    "description": "Nearly 2 hectares of titled, ocean-view jungle land in Pavones, Costa Rica, with spring-fed potable water and 300 m to the beach.",
+    "url": "https://organic-surf.org/",
+    "image": ["https://organic-surf.org/assets/gallery/drone_highshot.jpg"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Pavones",
+      "addressRegion": "Puntarenas",
+      "addressCountry": "CR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 8.41171,
+      "longitude": -83.10827
+    }
+  }
+  </script>
 </head>
 <body>
 
+<!-- ============ HEADER ============ -->
 <header class="site-header">
-  <img src="../assets/images/design/logo-white.svg" alt="Organic Surf" class="logo">
-  <nav>
+  <a href="index.html" class="brand" aria-label="Organic Surf — home">
+    <img src="assets/images/design/logo-white.svg" alt="">
+    <span class="brand-word">Organic Surf</span>
+  </a>
+  <nav class="primary" aria-label="Primary">
     <ul>
       <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="first-project.html">Retreat Project</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="first-project.html">The Property</a></li>
+      <li><a href="contact.html">Inquire</a></li>
     </ul>
   </nav>
+  <a href="#inquiry" class="nav-cta">Request Info Pack</a>
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+  </button>
 </header>
 
-<!-- HERO -->
-<!-- HERO -->
-<section class="hero-image">
-  <h1>Build Your Own Retreat</h1>
-  <p>An exclusive property in Pavones, Costa Rica — ready for your premium yoga & wellness retreat development.</p>
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-media">
+    <img src="assets/gallery/drone_highshot.jpg"
+         alt="Aerial view — ocean meeting jungle in Pavones, Costa Rica"
+         fetchpriority="high">
+  </div>
+  <div class="hero-inner">
+    <div class="container">
+      <span class="eyebrow on-dark reveal" style="background: var(--green); color: var(--bone); padding: 4px 10px; border-radius: 4px; display: inline-block; width: fit-content; letter-spacing: 0.1em;">Pavones · Costa Rica · USD 495,000</span>
+      <h1 class="reveal delay-1">Land that already<br>feels like home.</h1>
+      <p class="lede reveal delay-2">
+        Two hectares of titled jungle, an ocean horizon you can hear before you see,
+        and 300 meters to a quiet surf beach — minutes from one of the longest
+        left-hand waves on earth.
+      </p>
+      <div class="hero-cta reveal delay-3">
+        <a href="#inquiry" class="btn btn-primary">Request Info Pack <span class="arr">→</span></a>
+        <a href="first-project.html" class="btn btn-ghost">Explore the Property</a>
+      </div>
+      <div class="hero-meta">
+        <div class="hero-meta-item"><span class="k">Size</span><span class="v">19,939 m²</span></div>
+        <div class="hero-meta-item"><span class="k">Title</span><span class="v">Fully titled</span></div>
+        <div class="hero-meta-item"><span class="k">To beach</span><span class="v">≈ 300 m</span></div>
+        <div class="hero-meta-item"><span class="k">Elevation</span><span class="v">35 – 75 m</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true">
+    <span>Scroll</span><span class="line"></span>
+  </div>
+</section>
 
-  <div class="cta-row">
-    <a href="contact.html" class="cta-button">Request Info Pack (PDF)</a>
-    <a href="contact.html" class="cta-button cta-secondary">Schedule a Visit</a>
-    <a href="https://wa.me/50685094439" target="_blank" rel="noopener" class="cta-button cta-secondary">WhatsApp</a>
-
-    <div class="btn-box">
-      <a href="first-project.html" class="btn-green">Retreat Project</a>
+<!-- ============ VIDEO ============ -->
+<section class="section section-video">
+  <div class="container">
+    <div class="section-intro reveal">
+      <span class="eyebrow">Walk the land</span>
+      <h2>A short tour, in motion.</h2>
+    </div>
+    <div class="video reveal delay-1">
+      <iframe src="https://www.youtube.com/embed/ajEV0z3_qh4"
+              title="Pavones Retreat-Ready Property — Video Tour"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
     </div>
   </div>
 </section>
 
-
-
-<main class="page">
-  <div class="container">
-
-    <!-- ABOUT -->
-    <h1>About Organic Surf</h1>
-    <p>
-      Organic Surf is a <strong>boutique investment platform</strong> focused on identifying premium coastal properties
-      in Costa Rica and preparing them for <em>retreat-ready development</em>.  
-      Our mission: combine <strong>natural luxury, sustainability, world-class surf</strong>, and global demand for
-      wellness tourism — creating transformative projects with real appreciation potential.
-    </p>
-
-    <!-- WHY PAVONES -->
-    <h2>Why Pavones for a Retreat?</h2>
-    <p>
-      Pavones is an <strong>authentic, low-density destination</strong> with one of the world’s longest left-hand waves.  
-      The setting blends jungle, ocean and wildlife, attracting international visitors seeking wellness and transformation.  
-      Costa Rica is a leader in <strong>wellness travel</strong>, and Pavones is emerging as a <strong>premium hotspot</strong> for yoga, meditation,
-      eco-luxury and surf retreats.
-    </p>
-
-    <!-- FIRST PROJECT -->
-    <h2>Our First Project — Pavones</h2>
-    <p>
-      Our flagship site offers <strong>ocean views</strong>, <strong>jungle privacy</strong>, and direct beach access within 300 m.  
-      With natural terraces between 35–75 m elevation, it’s ideal for designing a yoga pavilion, meditation shala, guest suites,
-      and farm-to-table dining spaces. Existing well + water tank, fine hardwood cabin, nearby grid power, and solar readiness
-      provide a fast development runway.
-    </p>
-    <div style="margin:12px 0 28px;">
-      <a class="cta-button" href="first-project.html">Explore the Project</a>
+<!-- ============ VISION ============ -->
+<section class="section-vision">
+  <div class="container-narrow">
+    <p class="vision-label reveal">A rare canvas</p>
+    <h2 class="vision-h2 reveal delay-1">Some land is bought.<br>This kind is <em>received</em>.</h2>
+    <div class="vision-body">
+      <p class="lede reveal delay-2">
+        Pavones is the kind of place that resets the body before it resets the mind.
+        Howler monkeys at first light. Rain that arrives like applause.
+        Pacific blues that change colour by the hour.
+      </p>
+      <p class="reveal delay-3">
+        This property sits on the edge of all of it — jungle behind, ocean in front,
+        and enough quiet acreage to design exactly what you imagine without compromise.
+        It has been held, tended and prepared for someone with vision.
+      </p>
     </div>
-
-    <!-- INVESTMENT PURPOSE -->
-    <h2>Investment with Purpose</h2>
-    <p>
-      Wellness tourism in Costa Rica continues to expand, and premium retreat demand is rising.  
-      Pavones offers international appeal, authenticity, and scarcity of comparable ocean-view jungle properties.  
-      This is not just land — it’s the <strong>foundation of a high-value retreat project</strong> with lifestyle, impact, and ROI.  
-      Request the <strong>Info Pack (PDF)</strong> for market drivers, concept ideas and planning notes.
-    </p>
-
-    <!-- VIDEO -->
-    <div class="video-container large" style="margin-top:20px;">
-      <iframe
-        src="https://www.youtube.com/embed/jvTLITDSFHI"
-        title="Pavones Retreat Ready — Video Tour"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen>
-      </iframe>
-    </div>
-
-    <!-- FINAL CTA -->
-    <div style="text-align:center; margin:30px 0;">
-      <a href="contact.html" class="cta-button">Request Info Pack (PDF)</a>
-      <a href="contact.html" class="cta-button cta-secondary">Schedule a Visit</a>
-      <a href="https://wa.me/50685094439" target="_blank" rel="noopener" class="cta-button cta-secondary">WhatsApp</a>
-    </div>
-
   </div>
-</main>
+</section>
 
-<footer class="site-footer">
-  <div class="footer-content">
+<!-- ============ IMAGE BREAK 1 ============ -->
+<section class="image-break">
+  <img src="assets/gallery/oceanview4.jpg"
+       alt="Pacific horizon seen from the property"
+       loading="lazy">
+  <div class="ib-quote">
+    <blockquote class="reveal">"Some views you don't visit.<br>You build a life around them."</blockquote>
+  </div>
+</section>
 
-    <!-- First line: Logo -->
-    <div class="footer-top">
-      <img src="../assets/images/design/logo-white.svg" 
-           alt="Organic Surf Logo" 
-           class="footer-logo">
+<!-- ============ PROPERTY STATS — editorial table ============ -->
+<section class="section-stats">
+  <div class="container">
+    <div class="stats-header reveal">
+      <span class="eyebrow">What you're acquiring</span>
+      <h2>Property stats</h2>
     </div>
-
-    <!-- Second line: all in one row -->
-    <div class="footer-bottom">
-      <div class="social-links">
-        <a href="https://www.instagram.com/organic.surf_" target="_blank" aria-label="Instagram">
-          <img src="../assets/icons/instagram.svg" alt="Instagram">
-        </a>
-        <a href="https://wa.me/50685094439" target="_blank" aria-label="WhatsApp">
-          <img src="../assets/icons/whatsapp.webp" alt="WhatsApp">
-        </a>
+    <div class="stat-table">
+      <div class="stat-row reveal">
+        <span class="sn">01</span>
+        <span class="sv">≈ 2 hectares</span>
+        <span class="sl">19,939 m² of contiguous, titled land — outside the maritime zone, ready to develop.</span>
       </div>
-      <p class="footer-email"><a href="mailto:info@organic-surf.org">info@organic-surf.org</a></p>
-      <p class="footer-copy">© 2025 Organic Surf</p>
+      <div class="stat-row reveal delay-1">
+        <span class="sn">02</span>
+        <span class="sv">Ocean view + full privacy</span>
+        <span class="sl">Unobstructed Pacific views from 35–75 m elevation, surrounded by primary jungle on all sides — total seclusion. No roads, no neighbours, no noise. Just the forest whispering.</span>
+      </div>
+      <div class="stat-row reveal delay-2">
+        <span class="sn">03</span>
+        <span class="sv">Walk to surf</span>
+        <span class="sl">≈ 300 m to a quiet surf beach. 9 min to Pavones point — same drive to Punto Salea on the right swell.</span>
+      </div>
+      <div class="stat-row reveal">
+        <span class="sn">04</span>
+        <span class="sv">Build-ready</span>
+        <span class="sl">Existing hardwood cabin, drilled well with storage, grid power at the edge, south-facing slope built for solar.</span>
+      </div>
+      <div class="stat-row reveal delay-1">
+        <span class="sn">05</span>
+        <span class="sv">Living water</span>
+        <span class="sl">Bordered by two natural creeks. Spring-fed potable water on site — a rarity in tropical real estate.</span>
+      </div>
+      <div class="stat-row reveal delay-2">
+        <span class="sn">06</span>
+        <span class="sv">Wildlife corridor</span>
+        <span class="sl">Property backs onto the wild La Hierba zone — sloths, ocelots, scarlet macaws and toucans pass through.</span>
+      </div>
     </div>
+  </div>
+</section>
 
+<!-- ============ WHY THIS LAND ============ -->
+<section class="section-why">
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-text">
+        <span class="eyebrow reveal">Why this land</span>
+        <h2 class="why-h2 reveal delay-1">What doesn't<br>exist anymore.</h2>
+        <p class="reveal delay-2">
+          Large private parcels surrounded by native primary forest, with ocean views
+          and 300 meters to the beach? They don't get listed in Pavones anymore.
+          There aren't any left.
+        </p>
+        <p class="reveal delay-3">
+          What makes this one rarer still: a decade of careful stewardship.
+          <strong>Active wildlife corridors</strong> stretching into the wild La Hierba zone —
+          sloths, tamanduas, coatis, ocelots, jaguarundis, scarlet macaws and toucans pass through.
+          Two natural creeks bordering the land. <strong>Spring-fed potable water on site.</strong>
+        </p>
+        <p class="reveal delay-3">
+          This isn't land waiting to be tamed. It's a thriving ecosystem already in balance —
+          ready to host something beautiful without erasing what makes it worth coming for.
+        </p>
+        <a href="first-project.html" class="btn btn-outline-dark reveal delay-4">See the property in detail <span class="arr">→</span></a>
+      </div>
+      <div class="why-media reveal delay-2">
+        <img src="assets/gallery/jungle3.jpg" alt="Primary jungle on the Pavones property" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ IMAGE BREAK 2 ============ -->
+<section class="image-break">
+  <img src="assets/gallery/drone_highshot3.jpg"
+       alt="Aerial of the Pavones coastline — jungle meeting the Pacific"
+       loading="lazy"
+       style="object-position: center bottom;">
+  <div class="ib-quote">
+    <blockquote class="reveal" style="white-space: nowrap;">"Where the jungle ends,<br>the Pacific begins."</blockquote>
+  </div>
+</section>
+
+<!-- ============ IMAGINE THE RETREAT ============ -->
+<section class="section on-green section-imagine">
+  <div class="container">
+    <div class="imagine-header">
+      <span class="eyebrow reveal">Imagine</span>
+      <h2 class="reveal delay-1">A retreat that feels inevitable.</h2>
+      <p class="lede reveal delay-2">
+        The terraces, water, privacy and wave are already here. Below is one possible composition —
+        your architectural program can adapt to brand, capacity and operating model.
+      </p>
+    </div>
+    <div class="concept-grid">
+      <article class="concept reveal">
+        <img src="assets/gallery/ai/shala.jpg" alt="Open doors framing jungle and Pacific ocean" loading="lazy">
+        <div class="concept-body">
+          <h3>Ocean-view shala</h3>
+          <p>A pavilion oriented to the Pacific for sunrise practice and sunset breathwork.</p>
+        </div>
+      </article>
+      <article class="concept reveal delay-1">
+        <img src="assets/gallery/ai/lodge1.png" alt="Hardwood staircase with ocean view" loading="lazy">
+        <div class="concept-body">
+          <h3>8 – 14 suites</h3>
+          <p>Hardwood cabins phased across natural terraces — privacy, view, airflow.</p>
+        </div>
+      </article>
+      <article class="concept reveal delay-2">
+        <img src="assets/gallery/ai/kitchen.jpg" alt="Jungle clearing opening to the Pacific" loading="lazy">
+        <div class="concept-body">
+          <h3>Farm-to-table kitchen</h3>
+          <p>Open-air dining around a fire circle. Plunge pool. Slow mornings.</p>
+        </div>
+      </article>
+      <article class="concept reveal">
+        <img src="assets/gallery/ai/spa.jpg" alt="Primary jungle canopy on the property" loading="lazy">
+        <div class="concept-body">
+          <h3>Jungle spa</h3>
+          <p>Treatment decks tucked into shade beside the natural creek soundscape.</p>
+        </div>
+      </article>
+      <article class="concept reveal delay-1">
+        <img src="assets/gallery/ai/lodge.jpg" alt="Hardwood interior with surfboard" loading="lazy">
+        <div class="concept-body">
+          <h3>Surf lodge</h3>
+          <p>Costa Rican hardwood construction. A board by the door. Five minutes to the wave.</p>
+        </div>
+      </article>
+      <article class="concept reveal delay-2">
+        <img src="assets/gallery/jungle7.jpg" alt="Airy forest with filtered light" loading="lazy">
+        <div class="concept-body">
+          <h3>Phased build</h3>
+          <p>Multiple sites allow staged capex without disturbing the operating retreat.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY NOW ============ -->
+<section class="section on-dark section-why-now">
+  <div class="container-narrow">
+    <span class="eyebrow on-dark reveal">Why now</span>
+    <h2 class="reveal delay-1">A market in motion.<br>A coastline that isn't making more.</h2>
+    <p class="lede reveal delay-2">
+      Wellness tourism is one of the fastest-growing segments in global travel,
+      and Costa Rica is its lighthouse country. For decades Pavones stayed off the radar —
+      too far south, too rough a road. That has changed.
+    </p>
+    <p class="reveal delay-3">
+      Land like this — large, titled, jungle-bordered, ocean-view, walk-to-surf —
+      has stopped appearing in Pavones. New arrivals are dividing existing parcels,
+      not finding fresh ones. <strong>What's available now is what gets built on.</strong>
+    </p>
+    <p class="reveal delay-3">This isn't a flip. It's the foundation of a brand and a life.</p>
+    <div class="reveal delay-4" style="margin-top: 40px;">
+      <a href="#inquiry" class="btn btn-primary">Request the Info Pack <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="section on-cream section-gallery">
+  <div class="container">
+    <div class="section-intro reveal">
+      <span class="eyebrow">Gallery</span>
+      <h2>The land, told plainly.</h2>
+    </div>
+    <div class="gallery reveal delay-1">
+      <a href="assets/gallery/drone_highshot.jpg"><img src="assets/gallery/drone_highshot.jpg" alt="Aerial of the property" loading="lazy"></a>
+      <a href="assets/gallery/oceanview1.jpg"><img src="assets/gallery/oceanview1.jpg" alt="Ocean view from the property" loading="lazy"></a>
+      <a href="assets/gallery/jungle1.jpg"><img src="assets/gallery/jungle1.jpg" alt="Jungle interior" loading="lazy"></a>
+      <a href="assets/gallery/oceanview4.jpg"><img src="assets/gallery/oceanview4.jpg" alt="Ocean horizon" loading="lazy"></a>
+      <a href="assets/gallery/drone2.jpg"><img src="assets/gallery/drone2.jpg" alt="Aerial showing build sites" loading="lazy"></a>
+      <a href="assets/gallery/jungle5.jpg"><img src="assets/gallery/jungle5.jpg" alt="Jungle path" loading="lazy"></a>
+      <a href="assets/gallery/house1.jpg"><img src="assets/gallery/house1.jpg" alt="Existing hardwood cabin" loading="lazy"></a>
+      <a href="assets/gallery/oceanview3.jpg"><img src="assets/gallery/oceanview3.jpg" alt="Pacific view" loading="lazy"></a>
+      <a href="assets/gallery/jungle7.jpg"><img src="assets/gallery/jungle7.jpg" alt="Jungle canopy" loading="lazy"></a>
+      <a href="assets/gallery/well.jpg"><img src="assets/gallery/well.jpg" alt="Drilled well" loading="lazy"></a>
+      <a href="assets/gallery/drone3.jpg"><img src="assets/gallery/drone3.jpg" alt="Aerial perspective" loading="lazy"></a>
+      <a href="assets/gallery/jungle2.jpg"><img src="assets/gallery/jungle2.jpg" alt="Jungle ground cover" loading="lazy"></a>
+    </div>
+    <div class="reveal delay-2" style="margin-top: 48px; text-align: center;">
+      <a href="first-project.html" class="btn btn-outline-dark">See the full property page <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MAP ============ -->
+<section class="section section-map">
+  <div class="container">
+    <div class="section-intro reveal">
+      <span class="eyebrow">Where it sits</span>
+      <h2>Remote enough.<br>Reachable enough.</h2>
+    </div>
+    <div class="map-wrap">
+      <div class="map-frame reveal">
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-83.13%2C8.39%2C-83.09%2C8.43&amp;layer=mapnik&amp;marker=8.41171%2C-83.10827"
+          title="Map of Pavones, Costa Rica"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <ul class="distance-list reveal delay-1">
+        <li><span class="where">Coordinates</span><span class="when">8°24'42"N · 83°06'30"W</span></li>
+        <li><span class="where">Beach access</span><span class="when">≈ 300 m / 5 min walk</span></li>
+        <li><span class="where">Gypsy Wagons</span><span class="when">≈ 400 m walk</span></li>
+        <li><span class="where">Pavones point (long left)</span><span class="when">≈ 9 min</span></li>
+        <li><span class="where">Punto Salea (right break)</span><span class="when">≈ 5 min</span></li>
+        <li><span class="where">Town centre & coffee</span><span class="when">≈ 5 min</span></li>
+        <li><span class="where">Police station</span><span class="when">≈ 7 min</span></li>
+        <li><span class="where">Golfito airport</span><span class="when">≈ 1 hr 15</span></li>
+        <li><span class="where">San José (SJO)</span><span class="when">≈ 50 min flight</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final-cta" style="--final-bg: url('assets/gallery/drone3.jpg');">
+  <div class="container-narrow">
+    <span class="eyebrow on-dark reveal">Take the next step</span>
+    <h2 class="reveal delay-1">The land is ready.<br>The right person finds it once.</h2>
+    <p class="lede reveal delay-2">
+      Inquiries are reviewed personally. The Info Pack includes site plans,
+      capex ranges, market context and concept directions.
+    </p>
+    <div class="row reveal delay-3">
+      <a href="#inquiry" class="btn btn-primary">Request Info Pack <span class="arr">→</span></a>
+      <a href="https://wa.me/50685094439?text=Hi%2C+I%27m+interested+in+the+Pavones+property.+Please+send+me+the+Info+Pack." target="_blank" rel="noopener" class="btn btn-whatsapp">WhatsApp Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INQUIRY FORM ============ -->
+<section class="section on-cream section-inquiry" id="inquiry">
+  <div class="container">
+    <div class="inquiry-grid">
+      <div class="inquiry-text reveal">
+        <span class="eyebrow">Request the Info Pack</span>
+        <h2>Leave your details.<br>We'll handle the rest.</h2>
+        <p>
+          We review every inquiry personally and respond within 24 hours
+          with the full Info Pack — site plans, capex context, and next steps.
+        </p>
+        <div class="inquiry-meta">
+          <div class="item">
+            <span class="k">WhatsApp</span>
+            <span class="v"><a href="https://wa.me/50685094439?text=Hi%2C+I%27m+interested+in+the+Pavones+property.+Please+send+me+the+Info+Pack." target="_blank" rel="noopener">+506 8509 4439</a></span>
+          </div>
+          <div class="item">
+            <span class="k">Email</span>
+            <span class="v"><a href="mailto:pedrope3652@gmail.com">pedrope3652@gmail.com</a></span>
+          </div>
+          <div class="item">
+            <span class="k">Current price</span>
+            <span class="v" style="color: var(--green); font-weight: 600;">USD 495,000</span>
+          </div>
+        </div>
+      </div>
+      <div class="form-card reveal delay-1">
+        <form id="lead-form" action="https://formspree.io/f/mrbawjlk" method="POST" autocomplete="on">
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="_subject" value="Organic Surf — new inquiry">
+          <div class="form-grid cols-2">
+            <div class="field">
+              <label for="inq-name">Full name</label>
+              <input id="inq-name" name="name" type="text" required autocomplete="name" placeholder="Your name">
+            </div>
+            <div class="field">
+              <label for="inq-email">Email</label>
+              <input id="inq-email" name="email" type="email" required autocomplete="email" placeholder="you@domain.com">
+            </div>
+            <div class="field">
+              <label for="inq-wa">WhatsApp <span style="opacity:.6;">(optional)</span></label>
+              <input id="inq-wa" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="+1 …">
+            </div>
+            <div class="field">
+              <label for="inq-intent">What brings you here?</label>
+              <select id="inq-intent" name="intent">
+                <option value="">Select…</option>
+                <option>Operator — I run / want to run a retreat</option>
+                <option>Investor — land or hospitality exposure</option>
+                <option>Personal — private estate or sanctuary</option>
+                <option>Exploring — curious for now</option>
+              </select>
+            </div>
+          </div>
+          <div class="field" style="margin-top: 18px;">
+            <label for="inq-message">Tell us a little</label>
+            <textarea id="inq-message" name="message" rows="4" placeholder="What you're imagining, what you'd like to know, any questions."></textarea>
+          </div>
+          <div class="form-actions" style="margin-top: 20px;">
+            <button type="submit" class="btn btn-dark">Send inquiry <span class="arr">→</span></button>
+            <a class="btn btn-outline-dark" href="https://wa.me/50685094439?text=Hi%2C+I%27m+interested+in+the+Pavones+property.+Please+send+me+the+Info+Pack." target="_blank" rel="noopener">WhatsApp instead</a>
+          </div>
+          <p id="form-status" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/design/logo-white.svg" alt="Organic Surf">
+        <p>Stewarding a rare 2-hectare property in Pavones, Costa Rica — preserved primary forest, ocean view, walk to surf. Ready for the next generation of soulful retreats.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="first-project.html">The Property</a></li>
+          <li><a href="contact.html">Inquire</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:pedrope3652@gmail.com">pedrope3652@gmail.com</a></li>
+          <li><a href="https://wa.me/50685094439" target="_blank" rel="noopener">WhatsApp +506 8509 4439</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/organic.surf_" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/organic.surf_" target="_blank" rel="noopener" aria-label="Instagram">
+            <img src="assets/icons/instagram.svg" alt="">
+          </a>
+          <a href="https://wa.me/50685094439" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <img src="assets/icons/whatsapp.webp" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Organic Surf · Pavones, Costa Rica</span>
+      <span>Inquiries handled personally — usually within 24 h.</span>
+    </div>
   </div>
 </footer>
 
+<!-- Sticky CTA -->
+<div class="sticky-cta" role="region" aria-label="Inquire">
+  <span class="label">Ready to talk?</span>
+  <a href="#inquiry" class="btn btn-primary">Request Info Pack</a>
+</div>
 
+<!-- Floating WhatsApp -->
+<a class="wa-float"
+   href="https://wa.me/50685094439?text=Hi%2C+I%27m+interested+in+the+Pavones+property.+Please+send+me+the+Info+Pack."
+   target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <img src="assets/icons/whatsapp.webp" alt="">
+</a>
+
+<!-- Thank-you popup -->
+<div id="thankyou-popup" class="popup" aria-hidden="true">
+  <div class="popup-content" role="dialog" aria-modal="true" aria-labelledby="ty-title">
+    <h2 id="ty-title">Thank you.</h2>
+    <p>Your inquiry is in. We'll be in touch personally — usually within 24 hours.</p>
+    <div class="popup-actions">
+      <button id="close-popup" class="popup-close">Close</button>
+      <a href="first-project.html" class="btn btn-outline-dark">Explore the property</a>
+    </div>
+  </div>
+</div>
+
+<script src="scripts/site.js" defer></script>
 </body>
 </html>
-
-
-
-
-

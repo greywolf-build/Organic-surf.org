@@ -1,0 +1,17 @@
+# Videos
+*.mp4
+*.mp3
+*.mov
+*.avi
+*.webm
+*.mlt
+*.llc
+*.wow
+
+# Large / temp
+assets/video.*
+assets/gallery/ai/wave2
+assets/gallery/ai/wave3
+assets/gallery/ai/wave4
+assets/gallery/ai/wave5
+assets/gallery/ai/wave6
